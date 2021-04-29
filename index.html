@@ -17,7 +17,7 @@
     <div class="header">
       <div class="navbar" id="nav">
         <div class="logo"><img src="images/logo.svg" alt="blogr" /></div>
-        <div class="dropdown-list">
+        <div class="nav-item">
           <div class="dropdown">
             <button class="dropbtn">
               Product
@@ -54,12 +54,14 @@
               <a href="#">LinkedIn</a>
             </div>
           </div>
+          <div class="login-signup">
+            <button>Login</button>
+            <button>Sign Up</button>
+          </div>
         </div>
-        <div class="login-signup">
-          <button>Login</button>
-          <button>Sign Up</button>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="nav()">&#9776;</a>
+        <a href="javascript:void(0);" class="icon" onclick="nav()"
+          ><img src="images/icon-hamburger.svg" alt="="
+        /></a>
       </div>
       <div class="heading">
         <h1>A modern publishing platform</h1>
@@ -169,5 +171,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

@@ -8,15 +8,29 @@
   padding: 5% 8%;
 }
 .navbar {
-  overflow: hidden;
   display: flex;
+  align-items: center;
 }
-.dropdown-list {
+.logo {
+  float: left;
+}
+.nav-item,
+.login-signup {
   display: flex;
+  flex: auto;
+}
+.nav-item {
+  margin-left: 3%;
+  justify-content: flex-start;
 }
 .login-signup {
-  float: right;
-  display: flex;
+  justify-content: flex-end;
+}
+.login-signup > button {
+  margin-left: 5%;
+}
+.dropdown {
+  margin-left: 5%;
 }
 .dropdown-content {
   display: none;
@@ -39,6 +53,8 @@
 }
 .navbar .icon {
   display: none;
+  flex: auto;
+  justify-content: flex-end;
 }
 .attribution {
   font-size: 11px;
@@ -46,4 +62,39 @@
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 600px) {
+  .nav-item {
+    display: none;
+  }
+  .navbar .icon {
+    display: flex;
+  }
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive .nav-item {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+  }
+  .navbar.responsive .dropdown-content {
+    position: relative;
+  }
+  .navbar.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+  }
+  .navbar.responsive .login-signup {
+    flex-direction: column;
+  }
+  .navbar.responsive .login-signup > button {
+    margin-left: 0%;
+  }
+  .navbar.responsive .dropdown {
+    margin-left: 0%;
+  }
 }
