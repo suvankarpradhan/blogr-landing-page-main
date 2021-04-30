@@ -3,9 +3,15 @@
   padding: 0%;
   box-sizing: border-box;
 }
+body {
+  background-color: hsl(240, 2%, 96%);
+}
 .header {
-  background-color: brown;
-  padding: 5% 8%;
+  background: url("images/bg-pattern-intro.svg") no-repeat,
+    linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-position: 25% 50%;
+  padding: 5% 10%;
+  border-bottom-left-radius: 100px;
 }
 .navbar {
   display: flex;
@@ -27,10 +33,14 @@
   justify-content: flex-end;
 }
 .login-signup > button {
-  margin-left: 5%;
+  margin-left: 1%;
 }
 .dropdown {
-  margin-left: 5%;
+  margin-left: 2%;
+}
+.dropdown > button {
+  background-color: transparent;
+  color: hsl(0, 0%, 100%);
 }
 .dropdown-content {
   display: none;
@@ -55,6 +65,223 @@
   display: none;
   flex: auto;
   justify-content: flex-end;
+}
+.heading {
+  margin-top: 10%;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-family: "Overpass", sans-serif;
+}
+.heading > h1 {
+  font-size: 55px;
+  font-weight: 600;
+}
+.heading > p {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 1%;
+}
+.header-btn {
+  margin: 6% 0%;
+  text-align: center;
+}
+.header-btn > button {
+  width: 125px;
+  margin: 5px;
+}
+.header-btn-1,
+.signup-btn {
+  color: hsl(356, 100%, 66%);
+  background-color: hsl(0, 0%, 100%);
+  width: 125px;
+  font-weight: 500;
+}
+.header-btn-1:hover,
+.signup-btn:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(355, 100%, 74%);
+}
+.header-btn-2 {
+  border: 1px solid hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
+  background-color: transparent;
+}
+.header-btn-2:hover {
+  color: hsl(356, 100%, 66%);
+  background-color: hsl(0, 0%, 100%);
+}
+.login-btn {
+  width: 60px;
+  background-color: transparent;
+  color: hsl(0, 0%, 100%);
+}
+button {
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.sec1 {
+  padding: 5% 0%;
+  font-family: "Overpass", sans-serif;
+  overflow: hidden;
+}
+.sec1 .container {
+  display: flex;
+  flex-direction: row;
+  transform: translateX(10%);
+}
+.container > h2 {
+  font-weight: 600;
+  font-size: 35px;
+  text-align: center;
+  color: hsl(208, 49%, 24%);
+  position: absolute;
+  left: 35%;
+  top: 10%;
+  transform: translate(-35%, -10%);
+  z-index: 1;
+}
+.sec1 .left-portion,
+.sec1 .right-portion {
+  display: flex;
+  flex-direction: column;
+}
+.sec1 .left-portion {
+  flex: 45%;
+  padding: 16% 8% 0% 0%;
+}
+.sec1 .title {
+  font-size: 25px;
+  font-weight: 600;
+  color: hsl(208, 49%, 24%);
+  padding-bottom: 5%;
+}
+.sec1 .para {
+  font-size: 16px;
+  font-weight: 300;
+  color: hsl(207, 13%, 34%);
+  line-height: 1.5;
+  padding-bottom: 15%;
+}
+.right-portion {
+  flex: 55%;
+}
+.sec1 .right-portion > img {
+  object-fit: fill;
+  width: 115%;
+  height: auto;
+}
+.sec2 {
+  background: url("images/bg-pattern-circles.svg") no-repeat,
+    linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  background-position: -40% 90%;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+.sec2 .container {
+  display: flex;
+  flex-direction: row;
+}
+.sec2 .left-portion,
+.sec2 .right-portion {
+  flex-direction: column;
+  flex: 50%;
+}
+.sec2 .right-portion {
+  padding: 9% 12% 10% 0%;
+  color: hsl(0, 0%, 100%);
+  font-family: "Overpass", sans-serif;
+}
+.sec2 .title {
+  font-size: 35px;
+  font-weight: 600;
+  padding-bottom: 5%;
+}
+.sec2 .para {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.sec2 .left-portion > img {
+  position: absolute;
+  transform: translate(20%, -10%);
+  width: 37%;
+}
+.sec3 {
+  padding: 6% 0%;
+  display: flex;
+  flex-direction: row;
+  font-family: "Overpass", sans-serif;
+  transform: translateX(-10%);
+}
+.sec3 .left-portion,
+.sec3 .right-portion {
+  flex-direction: column;
+}
+.sec3 .left-portion {
+  flex: 55%;
+}
+.sec3 .left-portion > img {
+  object-fit: fill;
+  width: 115%;
+  height: auto;
+  transform: translateX(-12%);
+}
+.sec3 .right-portion {
+  flex: 45%;
+  padding: 10% 0% 0% 12%;
+}
+
+.sec3 .title {
+  font-size: 25px;
+  font-weight: 600;
+  color: hsl(208, 49%, 24%);
+  padding-bottom: 5%;
+}
+.sec3 .para {
+  font-size: 16px;
+  font-weight: 300;
+  color: hsl(207, 13%, 34%);
+  line-height: 1.5;
+  padding-bottom: 15%;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  font-family: "Overpass", sans-serif;
+  padding: 6% 0%;
+  background-color: hsl(240, 10%, 16%);
+  border-top-right-radius: 100px;
+}
+.foot-item1,
+.foot-item2,
+.foot-item3,
+.foot-item4 {
+  flex-direction: column;
+  flex: 25%;
+}
+.foot-item1 {
+  padding: 3% 0%;
+  text-align: center;
+}
+.ft-head {
+  font-size: 20px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 5%;
+}
+.ft-content {
+  color: hsl(240, 2%, 79%);
+  font-size: 16px;
+}
+li {
+  list-style-type: none;
 }
 .attribution {
   font-size: 11px;
