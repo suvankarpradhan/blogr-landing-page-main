@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/suvankarpradhan/blogr-landing-page-main)
-- Live Site URL: [Add live site URL here](https://suvankarpradhan.github.io/blogr-landing-page-main/)
+- Solution URL: [Click here](https://github.com/suvankarpradhan/blogr-landing-page-main)
+- Live Site URL: [Click here](https://suvankarpradhan.github.io/blogr-landing-page-main/)
 
 ## My process
 
