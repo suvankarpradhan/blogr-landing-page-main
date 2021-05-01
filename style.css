@@ -374,7 +374,8 @@ li:hover {
   .navbar.responsive .login-signup {
     flex-direction: column;
     align-items: center;
-    padding-top: 10%;
+    padding-top: 5%;
+    margin-top: 5%;
     border-top: 1px solid hsl(207, 13%, 90%);
   }
   .navbar.responsive .login-signup > button {
@@ -383,6 +384,13 @@ li:hover {
   .navbar.responsive .login-btn {
     color: hsl(208, 49%, 24%);
     font-size: 20px;
+  }
+  .navbar.responsive .login-btn:hover {
+    text-decoration: none;
+  }
+  .navbar.responsive .signup-btn {
+    background: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    color: hsl(0, 0%, 100%);
   }
   .navbar.responsive .dropdown {
     margin-left: 0%;
